@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProductVersion>8.0</ProductVersion>
+    <ProjectGuid>fb02125c-7218-4d06-accd-ce49dc1a84eb</ProjectGuid>
+    <RootNamespace>Tables</RootNamespace>
+    <AssemblyName>Tables</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <!-- Custom properties -->
+    <Name>Tables</Name>
+    <Id>Project-8D53577C502BCA6</Id>
+    <Version>8.0.1063.0</Version>
+    <TransformationVersion>8.0.1026.0</TransformationVersion>
+    <ConfigurationFile>
+    </ConfigurationFile>
+    <StartupForm>
+    </StartupForm>
+    <TargetLevel>Driver</TargetLevel>
+    <!-- Deployment -->
+    <DeploymentFiles>
+    </DeploymentFiles>
+    <CustomUpgradeVersion>0.0</CustomUpgradeVersion>
+    <MessageDefinition />
+    <DebuggerPlatform>Default</DebuggerPlatform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>True</DebugSymbols>
+    <XmlDocumentation>False</XmlDocumentation>
+    <NoWarn>108</NoWarn>
+    <!-- Deployment -->
+    <DeploymentPackage>True</DeploymentPackage>
+    <DeploymentPath>bin\Debug\</DeploymentPath>
+    <DeploymentVersion>1.12</DeploymentVersion>
+    <DeploymentVersionIncrement>True</DeploymentVersionIncrement>
+    <DeploymentIncludeRunSettings>False</DeploymentIncludeRunSettings>
+    <DeploymentTranslators>True</DeploymentTranslators>
+    <DeploymentAssemblies>True</DeploymentAssemblies>
+    <DeploymentSign>False</DeploymentSign>
+    <DeploymentCertificate>
+    </DeploymentCertificate>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>False</DebugSymbols>
+    <XmlDocumentation>False</XmlDocumentation>
+    <NoWarn>108</NoWarn>
+    <!-- Deployment -->
+    <DeploymentPackage>True</DeploymentPackage>
+    <DeploymentPath>bin\Release\</DeploymentPath>
+    <DeploymentVersion>1.0</DeploymentVersion>
+    <DeploymentVersionIncrement>True</DeploymentVersionIncrement>
+    <DeploymentIncludeRunSettings>False</DeploymentIncludeRunSettings>
+    <DeploymentTranslators>True</DeploymentTranslators>
+    <DeploymentAssemblies>True</DeploymentAssemblies>
+    <DeploymentSign>False</DeploymentSign>
+    <DeploymentCertificate>
+    </DeploymentCertificate>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OpenSpanEnvVar>OPENSPAN_APPLICATION_PATH</OpenSpanEnvVar>
+    <OpenSpanPath>$(OPENSPAN_APPLICATION_PATH)</OpenSpanPath>
+  </PropertyGroup>
+  <Import Project="$(OpenSpanPath)\OpenSpan.targets" />
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\log4net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Adapters">
+      <Private>False</Private>
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Adapters.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan.Adapters.ActiveX, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Adapters.ActiveX.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Adapters.Virtual, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Adapters.Virtual.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Adapters.Web">
+      <Private>False</Private>
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Adapters.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan.Adapters.Windows">
+      <Private>False</Private>
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Adapters.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan.Adapters.WinInet, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Adapters.WinInet.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.ApplicationFramework">
+      <Private>False</Private>
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.ApplicationFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan.Automation">
+      <Private>False</Private>
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Automation.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Controls.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Events, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Events.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Interactions, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Interactions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Interactions.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Interactions.Controls.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.IPC, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.IPC.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.NativeInterop, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.NativeInterop.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Recording, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Recording.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Script, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Script.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Threading, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Threading.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.TranslatorIpc, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.TranslatorIpc.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Virtual.Interfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Virtual.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OSComponents.Utilities.TestHarness, Version=8.0.21.0, Culture=neutral, PublicKeyToken=c0cb69f111622a50">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OSComponents.Utilities.TestHarness.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Runtime.Core">
+      <HintPath>$(OPENSPAN_APPLICATION_PATH)\OpenSpan.Runtime.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\ImportTypeMap.resx" />
+    <EmbeddedResource Include="Properties\MessageManifest.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcmeSearch.os">
+      <SubType>Component</SubType>
+      <Id>WebAdapter-8D53577F519D7E8</Id>
+    </Compile>
+    <Compile Include="ApplicationStarted.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8D535791D961262</Id>
+    </Compile>
+    <Compile Include="Tables_P_GetSeasoning.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8D5357A7C34F48B</Id>
+    </Compile>
+    <Compile Include="Tables_P_NavigateToSeasonings.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8D535794CDF7820</Id>
+    </Compile>
+    <Compile Include="_Tables_GC.os">
+      <SubType>Component</SubType>
+      <Id>GlobalContainer-8D5357825F113C5</Id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AcmeSearch.res">
+      <DependentUpon>AcmeSearch.os</DependentUpon>
+      <Deployment>DoNotDeploy</Deployment>
+    </Content>
+  </ItemGroup>
+</Project>
